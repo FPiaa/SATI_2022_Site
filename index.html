@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>SATI 2022</title>
   </head>
 
@@ -30,66 +31,82 @@
     </header>
     <!-- FIM HEADER -->
 
-    <!-- INICIO SOBRE -->
-    <section id="sobre" class="container col-12 col-xxl-8 py-2 px-4 border-bottom">
-        <div class="flex d-flex row flex-md-row-reverse py-4 justify-content-center">
-          <div id="carouselSobre" class="carousel slide col-12 col-md-6" data-bs-ride="carousel" data-bs-interval="5000">
-            <ul class="carousel-indicators">
-              <li data-bs-target="#carouselSobre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primeira Imagem"></li>
-              <li data-bs-target="#carouselSobre" data-bs-slide-to="1" aria-label="Segunda Imagem"></li>
-              <li data-bs-target="#carouselSobre" data-bs-slide-to="2" aria-label="Terceira Imagem"></li>
-            </ul>
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img class="img-fluid rounded" src="img-1.jpg" alt="Primeira Imagem">
+    <main>
+      <!-- INICIO SOBRE -->
+      <section id="sobre" class="container col-12 col-xxl-8 py-2 px-4 border-bottom">
+          <div class="flex d-flex row flex-md-row-reverse py-4 justify-content-center">
+            <div id="carouselSobre" class="carousel slide col-12 col-md-6" data-bs-ride="carousel" data-bs-interval="5000">
+              <ul class="carousel-indicators">
+                <li data-bs-target="#carouselSobre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primeira Imagem"></li>
+                <li data-bs-target="#carouselSobre" data-bs-slide-to="1" aria-label="Segunda Imagem"></li>
+                <li data-bs-target="#carouselSobre" data-bs-slide-to="2" aria-label="Terceira Imagem"></li>
+              </ul>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img class="img-fluid rounded" src="img-1.jpg" alt="Primeira Imagem">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded" src="img-2.jpg" alt="Segunda Imagem">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded" src="img-3.jpg" alt="Terceira Imagem">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img class="img-fluid rounded" src="img-2.jpg" alt="Segunda Imagem">
-              </div>
-              <div class="carousel-item">
-                <img class="img-fluid rounded" src="img-3.jpg" alt="Terceira Imagem">
-              </div>
+            </div> 
+            <div class="col-12 col-md-6 flex-column">
+              <h2 class="text-start text-md-center pb-2 pt-3 pt-md-0">O que é a SATI?</h2>
+              <p class="align-self-center text-start text-md-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Illum repudiandae aut iste harum culpa pariatur, blanditiis 
+                est quam voluptatibus ullam sequi, saepe mollitia quas autem. Eos
+                provident omnis assumenda blanditiis?
+              </p>
             </div>
-          </div> 
-          <div class="col-12 col-md-6 flex-column">
-            <h2 class="text-start text-md-center pb-2 pt-3 pt-md-0">O que é a SATI?</h2>
-            <p class="align-self-center text-start text-md-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Illum repudiandae aut iste harum culpa pariatur, blanditiis 
-              est quam voluptatibus ullam sequi, saepe mollitia quas autem. Eos
-              provident omnis assumenda blanditiis?
-            </p>
-          </div>
-        </div>  
-    </section>
-    <!-- FIM SOBRE-->
+          </div>  
+      </section>
+      <!-- FIM SOBRE-->
 
-    <!-- INICIO ATIVIDADES -->
-    <section id="atividades" class="container py-2 px-4 border-bottom">
-        <h2 class="text-start py-2">Atividades disponíveis</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 pb-4">
-          <div class="col py-2 pe-lg-4 ">
-            <h3 class="text-start">Palestras</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
+      <!-- INICIO ATIVIDADES -->
+      <section id="atividades" class="container py-2 px-4 border-bottom">
+          <h2 class="text-start py-2">Atividades disponíveis</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 pb-4">
+            <div class="col py-2 pe-lg-4 ">
+              <h3 class="text-start">Palestras</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
+            </div>
+            <div class="col py-2 px-sm-4">
+              <h3 class="text-start">Cursos</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
+            </div>
+            <div class="col py-2 px-lg-4">
+              <h3 class="text-start">Alguma outra atividade</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
+            </div>
           </div>
-          <div class="col py-2 px-sm-4">
-            <h3 class="text-start">Cursos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
-          </div>
-          <div class="col py-2 px-lg-4">
-            <h3 class="text-start">Alguma outra atividade</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
-          </div>
-        </div>
-    </section>
-    <!-- FIM ATIVIDADES -->
+      </section>
+      <!-- FIM ATIVIDADES -->
 
-    <!-- INICIO PALESTRANTES -->
-    <section id="palestrantes" class="container py-2 px-4">
-      <!-- TODO: DEFINIR SE ESTA SEÇÃO VAI SE CHAMAR PALESTRANTES MESMO -->
-      <h2 class="text-start py-2">Palestrantes</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 py-2">
-        <div class="col py-2">
+      <!-- INICIO PALESTRANTES -->
+      <section id="palestrantes" class="container py-2 px-4 border-bottom">
+        <!-- TODO: DEFINIR SE ESTA SEÇÃO VAI SE CHAMAR PALESTRANTES MESMO -->
+        <h2 class="text-start py-2">Palestrantes</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 py-2">
+          <div class="col py-2">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-12">
+                  <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
+                </div>
+                <div class="col-8 col-sm-12">
+                  <div class="card-body">
+                    <h4 class="card-title">PLACEHOLDER</h4>
+                    <p class="card-text">conteúdo do card</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col py-2">
           <div class="card shadow">
             <div class="row no-gutters">
               <div class="col-4 col-sm-12">
@@ -103,120 +120,169 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col py-2">
-        <div class="card shadow">
-          <div class="row no-gutters">
-            <div class="col-4 col-sm-12">
-              <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
-            </div>
-            <div class="col-8 col-sm-12">
-              <div class="card-body">
-                <h4 class="card-title">PLACEHOLDER</h4>
-                <p class="card-text">conteúdo do card</p>
-              </div>
-            </div>
           </div>
-        </div>
-        </div>
-        <div class="col py-2">
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-4 col-sm-12">
-                <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
-              </div>
-              <div class="col-8 col-sm-12">
-                <div class="card-body">
-                  <h4 class="card-title">PLACEHOLDER</h4>
-                  <p class="card-text">conteúdo do card</p>
+          <div class="col py-2">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-12">
+                  <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
+                </div>
+                <div class="col-8 col-sm-12">
+                  <div class="card-body">
+                    <h4 class="card-title">PLACEHOLDER</h4>
+                    <p class="card-text">conteúdo do card</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col py-2">
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-4 col-sm-12">
-                <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
-              </div>
-              <div class="col-8 col-sm-12">
-                <div class="card-body">
-                  <h4 class="card-title">PLACEHOLDER</h4>
-                  <p class="card-text">conteúdo do card</p>
+          <div class="col py-2">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-12">
+                  <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
+                </div>
+                <div class="col-8 col-sm-12">
+                  <div class="card-body">
+                    <h4 class="card-title">PLACEHOLDER</h4>
+                    <p class="card-text">conteúdo do card</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col py-2">
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-4 col-sm-12">
-                <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
-              </div>
-              <div class="col-8 col-sm-12">
-                <div class="card-body">
-                  <h4 class="card-title">PLACEHOLDER</h4>
-                  <p class="card-text">conteúdo do card</p>
+          <div class="col py-2">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-12">
+                  <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
+                </div>
+                <div class="col-8 col-sm-12">
+                  <div class="card-body">
+                    <h4 class="card-title">PLACEHOLDER</h4>
+                    <p class="card-text">conteúdo do card</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col py-2">
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-4 col-sm-12">
-                <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
-              </div>
-              <div class="col-8 col-sm-12">
-                <div class="card-body">
-                  <h4 class="card-title">PLACEHOLDER</h4>
-                  <p class="card-text">conteúdo do card</p>
+          <div class="col py-2">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-12">
+                  <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
+                </div>
+                <div class="col-8 col-sm-12">
+                  <div class="card-body">
+                    <h4 class="card-title">PLACEHOLDER</h4>
+                    <p class="card-text">conteúdo do card</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col py-2">
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-4 col-sm-12">
-                <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
-              </div>
-              <div class="col-8 col-sm-12">
-                <div class="card-body">
-                  <h4 class="card-title">PLACEHOLDER</h4>
-                  <p class="card-text">conteúdo do card</p>
+          <div class="col py-2">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-12">
+                  <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
+                </div>
+                <div class="col-8 col-sm-12">
+                  <div class="card-body">
+                    <h4 class="card-title">PLACEHOLDER</h4>
+                    <p class="card-text">conteúdo do card</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col py-2">
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-4 col-sm-12">
-                <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
-              </div>
-              <div class="col-8 col-sm-12">
-                <div class="card-body">
-                  <h4 class="card-title">PLACEHOLDER</h4>
-                  <p class="card-text">conteúdo do card</p>
+          <div class="col py-2">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-12">
+                  <img class="card-img-top" src="img-1.jpg" alt="PLACEHOLDER">
+                </div>
+                <div class="col-8 col-sm-12">
+                  <div class="card-body">
+                    <h4 class="card-title">PLACEHOLDER</h4>
+                    <p class="card-text">conteúdo do card</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>      
-    </section>
-    <!-- FIM PALESTRANTES -->
+          </div>      
+      </section>
+      <!-- FIM PALESTRANTES -->
 
-    <!-- INICIO CRONOGRAMA -->
-    <!-- FIM CRONOGRAMA -->
+      <!-- INICIO CRONOGRAMA -->
+      <!-- FIM CRONOGRAMA -->
 
-    <!-- INICIO PATROCINADORES -->
-    <!-- FIM PATROCINADORES -->
+      <!-- INICIO PATROCINADORES -->
+      <!-- FIM PATROCINADORES -->
+
+      <!-- INICIO CONTATO    -->
+      <section id="contatos" class="container py-2 px-4">
+        <h2 class="text-start py-2">Contatos</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus quam alias repudiandae commodi recusandae totam vero dolore dignissimos, tempore illum sit aut porro illo magni voluptatibus architecto aspernatur atque.</p>
+        <div class="row py-2 py-md-4">
+          <div class="col-12 col-md-6">
+              <div class="py-2 d-flex align-items-center">
+                <div class="icon-square rounded-circle d-inline-flex align-items-center
+                justify-content-center flex-shrink-0 fs-1 px-2">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="px-4">
+                <h4>Localização</h4>
+                <p>Endereço aquiaaaa</p>
+              </div>
+            </div>
+            <div class="py-2 d-flex align-items-center">
+              <div class="icon-square rounded-circle d-inline-flex align-items-center
+              justify-content-center flex-shrink-0 fs-1 px-2">
+              <i class="bi bi-telephone"></i>
+              </div>
+              <div class="px-4">
+                <h4>Telefone</h4>
+                <p>(42) 00000-0000 </p>
+              </div>
+            </div>
+            <div class="py-2 d-flex align-items-center">
+                <div class="icon-square rounded-circle d-inline-flex align-items-center
+                justify-content-center flex-shrink-0 fs-1 px-2">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="px-4">
+                <h4>E-mail</h4>
+                <p>email_sati@exemplo.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 bg-light">
+            <form action="#" class="py-2 py-md-0">
+              <h3 class="text-center mb-4">Deixe uma sugestão</h3>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control border-0 border-bottom border-dark" name="nome" id="nome" placeholder="e.g. João da Silva">
+                <label for="floatingLabel px-3">Nome completo</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control border-0 border-bottom border-dark has-validation" name="email" id="email" placeholder="nome@exemplo.com">
+                <label for="floatingLabel">E-mail</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Sugestões</label>
+              </div>
+              <button type="submit" class="my-4 float-end btn btn-primary ">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- FIM CONTATOS      -->
+    </main>
 
     <!-- INICIO FOOTER -->
     <!-- FIM FOOTER -->
