@@ -14,33 +14,31 @@
   <body>
     <!-- INICIO HEADER -->
     <!-- HEADER PARA DESKTOP-->
-    <header class="py-2 bg-dark sticky-top">
+    <header class="navbar navbar-dark bg-dark sticky-top">
       <!-- TODO: Atualizar para as cores temas da SATI-->
       <!-- TODO Adicionar o logo da SATI              -->
-      <nav class="container-lg d-none d-lg-block">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start my-2 ">
-          <a class="px-4 py-4 py-lg-2 text-decoration-none my-lg-0 me-lg-auto text-white" href="#">SATI 2022(logo)</a>
-          <ul class="nav col-12 px-4 my-md-0 col-lg-auto justify-content-center small">
-            <li><a class="nav-link btn btn-outline-secondary border-0 text-decoration-none text-white" href="#sobre"> Sobre</a></li>
-            <li><a class="nav-link btn btn-outline-secondary border-0 text-decoration-none text-white" href="#atividades">Atividades</a></li>
-            <li><a class="nav-link btn btn-outline-secondary border-0 text-decoration-none text-white" href="#palestrantes">Palestrantes</a></li>
-            <li><a class="nav-link btn btn-outline-secondary border-0 text-decoration-none text-white" href="#">Cronograma</a></li>
-            <li><a class="nav-link btn btn-outline-secondary border-0 text-decoration-none text-white" href="#contatos">Contatos</a></li>
-          </ul>
+      <div class="container-lg d-none d-lg-block">
+        <div class="d-flex align-items-center justify-content-between">
+          <a class="px-4 text-decoration-none text-white" href="#">SATI 2022(logo)</a>
+          <nav class="nav col-12 px-4 col-lg-auto justify-content-center">
+            <a class="nav-link btn-outline-secondary rounded border-0 text-decoration-none text-white" href="#sobre"> Sobre</a>
+            <a class="nav-link btn-outline-secondary rounded border-0 text-decoration-none text-white" href="#atividades">Atividades</a>
+            <a class="nav-link btn-outline-secondary rounded border-0 text-decoration-none text-white" href="#palestrantes">Palestrantes</a>
+            <a class="nav-link btn-outline-secondary rounded border-0 text-decoration-none text-white" href="#">Cronograma</a>
+            <a class="nav-link btn-outline-secondary rounded border-0 text-decoration-none text-white" href="#contatos">Contatos</a>
+          </nav>
         </div>
-      </nav>
+      </div>
     <!-- FIM HEADER DESKTOP-->
 
     <!-- HEADER MOBILE -->
-      <div class="container d-lg-none">
-        <div class="d-flex justify-content-between align-items-center">
+      <div class="container d-lg-none d-flex justify-content-between align-items-center">
           <a class="px-4 nav-link btn-outline-secondary rounded text-decoration-none text-white" href="#">SATI 2022(logo)</a>
           <a class="nav-link btn-outline-secondary rounded text-decoration-none text-white border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#headerOffCanvas" aria-controls="Cabeçalho móvel"
           >
             <i class="bi bi-list"></i>
           </a>
-        </div>
 
         <div class="offcanvas offcanvas-end bg-dark w-50" tabindex="-1" id="headerOffCanvas" 
         aria-labelledby="Cabeçalho para dispositívos móveis">
