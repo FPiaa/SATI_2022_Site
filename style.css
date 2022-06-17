@@ -16,6 +16,6 @@
 }
 
 .contact-hover:hover > :first-child {
-    transition: background-color 500ms ease-in-out 100ms;
+    transition: background-color 300ms ease-in-out 100ms;
     background-color: #ccc;
 }
