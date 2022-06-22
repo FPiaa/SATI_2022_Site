@@ -1,3 +1,73 @@
 $primary: #320F59;
 $secondary: #FAE056; 
+
+$transition-delay-short: 200ms;
+$transition-delay-medium: 300ms;
+$transition-delay-long: 500ms;
+$transition-duration: 100ms;
+$transition-timing-function: ease-in-out;
+
+.background-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbipbrasil.com.br%2Fwp-content%2Fuploads%2F2020%2F04%2Fimagem-AutoML-scaled.jpg&f=1&nofb=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+};
+
+.hero {
+    height: 100vh;
+    padding: 0;
+};
+
+.contact-hover:hover > :first-child {
+    transition-property: color, background-color;
+    -o-transition-property: color, background-color;
+    -moz-transition-property: color, background-color;
+    -webkit-transition-property: color, background-color;
+
+    transition: all $transition-delay-medium $transition-timing-function $transition-duration;
+    background-color: $primary;
+    color: $secondary;
+};
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+
+.nav-link {
+    background-color: transparent;
+    &:hover {
+        color: $primary !important;
+        background-color: $secondary;
+        transition-property: color, background-color;
+        -o-transition-property: color, background-color;
+        -moz-transition-property: color, background-color;
+        -webkit-transition-property: color, background-color;
+    
+        transition: all $transition-delay-short $transition-timing-function $transition-duration;
+    };
+}
+
+.btn-invert-color:hover  {
+    color: $primary !important;
+    background-color: $secondary;
+    transition-property: color, background-color;
+    -o-transition-property: color, background-color;
+    -moz-transition-property: color, background-color;
+    -webkit-transition-property: color, background-color;
+
+    transition: all $transition-delay-short $transition-timing-function $transition-duration;
+}
+
+@import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
