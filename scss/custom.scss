@@ -60,7 +60,7 @@ $transition-timing-function: ease-in-out;
 
 .btn-invert-color:hover  {
     color: $primary !important;
-    background-color: $secondary;
+    background-color: $secondary !important;
     transition-property: color, background-color;
     -o-transition-property: color, background-color;
     -moz-transition-property: color, background-color;

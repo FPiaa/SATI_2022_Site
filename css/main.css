@@ -511,7 +511,7 @@ progress {
 
 .btn-invert-color:hover {
   color: #320F59 !important;
-  background-color: #FAE056;
+  background-color: #FAE056 !important;
   transition-property: color, background-color;
   -o-transition-property: color, background-color;
   -moz-transition-property: color, background-color;
