@@ -10,13 +10,14 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>SATI 2022</title>
   </head>
 
   <body>
     <!-- HERO -->
     <header class="hero background-img">
-      <div class="container-fluid d-flex h-100 align-items-center justify-content-center">
+      <div class="container-fluid d-flex h-100 align-items-center justify-content-center" data-aos="zoom-in-up" data-aos-duration="2000">
         <div class="flex-column text-center">
           <img src="./static/computador.svg" class="h-25 w-25" alt="computador">
           <h2 class="mt-3 mb-5 text-secondary word-break">Semana de Atualização em Tecnologia da Informação</h2>
@@ -81,10 +82,11 @@
 
     <main>
       <!-- INICIO SOBRE -->
-      <section id="sobre" class="border-bottom" style="padding-top: 56px;">
+      <section id="sobre" class="border-bottom" data-aos="fade-in" data-aos-duration="700" style="padding-top: 56px;">
         <div class="container col-12 col-xxl-8 py-2 px-4">
           <div class="d-flex row flex-md-row-reverse py-4 justify-content-center">
-            <div id="carouselSobre" class="carousel slide col-12 col-md-6" data-bs-ride="carousel" data-bs-interval="5000">
+            <div id="carouselSobre" class="carousel slide col-12 col-md-6" data-aos="fade-left" data-aos-duration="1000"
+              data-bs-ride="carousel" data-bs-interval="5000">
               <ul class="carousel-indicators">
                 <li data-bs-target="#carouselSobre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primeira Imagem"></li>
                 <li data-bs-target="#carouselSobre" data-bs-slide-to="1" aria-label="Segunda Imagem"></li>
@@ -102,8 +104,8 @@
                 </div>
               </div>
             </div> 
-            <div class="col-12 col-md-6">
-              <h2 class="text-start text-md-center pb-4 pt-3 pt-md-0">O que é a SATI?</h2>
+            <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1000">
+              <h2 class="text-start text-md-center pb-4 pt-3 pt-md-0" >O que é a SATI?</h2>
               <p class="text-start text-md-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing 
                 elit. Illum repudiandae aut iste harum culpa pariatur, blanditiis 
@@ -118,18 +120,18 @@
 
       <!-- INICIO ATIVIDADES -->
       <section id="atividades" class="border-bottom" style="padding-top: 56px;">
-        <div class="container py-2 px-4">
+        <div class="container py-2 px-4" data-aos="fade-in" data-aos-duration="1000">
           <h2 class="text-start pt-2 pb-4">Atividades disponíveis</h2>
           <div class="row d-flex justify-content-center pb-4">
-            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 pe-lg-4 ">
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 pe-lg-4" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
               <h3 class="text-start">Palestras</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
             </div>
-            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-sm-4">
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-sm-4" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">
               <h3 class="text-start">Cursos</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
             </div>
-            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4">
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="1900" data-aos-duration="1000">
               <h3 class="text-start">Alguma outra atividade</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
             </div>
@@ -139,11 +141,11 @@
       <!-- FIM ATIVIDADES -->
 
       <!--INICIO CRONOGRAMA-->
-      <section id="cronograma" class="border-bottom" style="padding-top: 56px;">
+      <section id="cronograma" class="border-bottom" data-aos="fade-in" data-aos-duration="1000" style="padding-top: 56px;">
         <div class="container">
           <h2>Cronograma</h2>
           <p><br></p>
-          <nav>
+          <nav data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000"> 
               <div class="nav bg-white justify-content-center justify-content-md-start" id="nav-tab" role="tablist">
                 <button class="nav-link btn mb-1 rounded text-primary me-1" id="segunda-tab" data-bs-toggle="tab" data-bs-target="#segunda" type="button" role="tab" aria-controls="segunda" aria-selected="true">Segunda</button>
                 <button class="nav-link btn mb-1 rounded text-primary mx-1" id="terca-tab" data-bs-toggle="tab" data-bs-target="#terca" type="button" role="tab" aria-controls="terca" aria-selected="false">Terça</button>
@@ -152,7 +154,7 @@
                 <button class="nav-link btn mb-1 rounded text-primary mx-1" id="sexta-tab" data-bs-toggle="tab" data-bs-target="#sexta" type="button" role="tab" aria-controls="sexta" aria-selected="false">Sexta</button>
               </div>
             </nav>
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content" id="nav-tabContent" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
               <div class="tab-pane fade show active" id="segunda" role="tabpanel" aria-labelledby="segunda-tab">
                   <div class="row"> <!-- Grade horária segunda-feira -->   
                     <div class="table-responsive">     
@@ -352,8 +354,8 @@
       </section>
       <!--FIM CRONOGRAMA-->
       <!-- INICIO PALESTRANTES -->
-      <section id="palestrantes" class="border-bottom" style="padding-top: 56px;">
-        <div class="container py-2 px-4">
+      <section id="palestrantes" class="border-bottom" data-aos="fade-in" style="padding-top: 56px;">
+        <div class="container py-2 px-4" data-aos="fade-in" data-aos-duration="1000">
           <!-- TODO: DEFINIR SE ESTA SEÇÃO VAI SE CHAMAR PALESTRANTES MESMO -->
           <h2 class="text-start pt-2 pb-4">Palestrantes</h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 py-2">
@@ -485,13 +487,13 @@
       <!-- FIM PATROCINADORES -->
 
       <!-- INICIO CONTATO    -->
-      <section id="contatos" style="padding-top: 56px;">
+      <section id="contatos" data-aos="fade-in" data-aos-duration="1000" style="padding-top: 56px;">
         <div class="container py-2 px-4">
           <h2 class="text-start pt-2 pb-4">Contatos</h2>
           <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus quam alias repudiandae commodi recusandae totam vero dolore dignissimos, tempore illum sit aut porro illo magni voluptatibus architecto aspernatur atque.</p>
           <div class="row row-cols-1 row-cols-md-2 py-2 py-md-4">
             <!-- esquerdo -->
-            <div class="col d-flex justify-content-center justify-content-md-start">
+            <div class="col d-flex justify-content-center justify-content-md-start" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
               <ul class="list-unstyled text-start">
                 <li>
                   <div class="contact-hover py-2 d-flex align-items-center">
@@ -535,7 +537,7 @@
             </div>
 
             <!-- direito -->
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
               <form id="formContato" action="#" class="py-2 py-md-0 needs-validation" novalidate>
                 <h3 class="text-center mb-4">Deixe uma sugestão</h3>
                 <div class="form-floating mb-3">
@@ -655,6 +657,7 @@
         return canSubmit;
       }
     </script>
-  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
   </body>
   </html>
