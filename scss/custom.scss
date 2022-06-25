@@ -7,6 +7,10 @@ $transition-delay-long: 500ms;
 $transition-duration: 100ms;
 $transition-timing-function: ease-in-out;
 
+$card-hover-duration: 700ms;
+
+$card-hover-zoom: 1.05;
+
 .background-img {
     position: relative;
     width: 100%;
@@ -67,6 +71,35 @@ $transition-timing-function: ease-in-out;
     -webkit-transition-property: color, background-color;
 
     transition: all $transition-delay-short $transition-timing-function $transition-duration;
+}
+
+.card-hover-zoom {
+    transition: transform $card-hover-duration;
+}
+
+.card-hover-zoom:hover {
+    transform: scale($card-hover-zoom);
+    -ms-transform: scale($card-hover-zoom);
+    -moz-transform: scale($card-hover-zoom);
+    -webkit-transform: scale($card-hover-zoom);
+}
+
+.show-hover {
+    transition-property: opacity, height;
+    -o-transition-property: opacity, height;
+    -moz-transition-property: opacity, height;
+    -webkit-transition-property: opacity, height;
+
+    transition: all $card-hover-duration;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.card:hover .card-body .show-hover {
+    opacity: 1;
+    height: auto;
+    max-height: 100%;
 }
 
 .form-group {

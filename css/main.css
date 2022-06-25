@@ -519,6 +519,34 @@ progress {
   transition: all 200ms ease-in-out 100ms;
 }
 
+.card-hover-zoom {
+  transition: transform 700ms;
+}
+
+.card-hover-zoom:hover {
+  transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+
+.show-hover {
+  transition-property: opacity, height;
+  -o-transition-property: opacity, height;
+  -moz-transition-property: opacity, height;
+  -webkit-transition-property: opacity, height;
+  transition: all 700ms;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.card:hover .card-body .show-hover {
+  opacity: 1;
+  height: auto;
+  max-height: 100%;
+}
+
 .form-group {
   border-style: none, none, solid, none;
 }
