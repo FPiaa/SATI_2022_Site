@@ -1,18 +1,27 @@
 @charset "UTF-8";
 .background-img {
-  position: relative;
+  position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(#000, #320F59);
+  background-image: url("../static/Rectangle 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 10%;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), #320F59);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-}
-
-.hero {
-  height: 100vh;
-  padding: 0;
 }
 
 .contact-hover:hover > :first-child {
@@ -519,38 +528,49 @@ progress {
   transition: all 200ms ease-in-out 100ms;
 }
 
-.card-hover-zoom {
-  transition: transform 700ms;
-}
-
-.card-hover-zoom:hover {
-  transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-}
-
 .show-hover {
-  transition-property: opacity, height;
-  -o-transition-property: opacity, height;
-  -moz-transition-property: opacity, height;
-  -webkit-transition-property: opacity, height;
-  transition: all 700ms;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-.card:hover .card-body .show-hover {
   opacity: 1;
-  height: auto;
-  max-height: 100%;
+  height: 100%;
 }
 
-.form-group {
-  border-style: none, none, solid, none;
+@media (prefers-reduced-motion) {
+  .show-hover {
+    transition: none !important;
+    opacity: 1 !important;
+    height: 100% !important;
+  }
+  .card:hover .card-body .show-hover {
+    opacity: 1;
+    height: auto;
+    max-height: 100%;
+  }
 }
-
+@media (min-width: 992px) {
+  .show-hover {
+    transition-property: opacity, height !important;
+    -o-transition-property: opacity, height !important;
+    -moz-transition-property: opacity, height !important;
+    -webkit-transition-property: opacity, height !important;
+    transition: all 300ms !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  .card:hover .card-body .show-hover {
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: 100% !important;
+  }
+  .card-hover-zoom {
+    transition: transform 300ms !important;
+  }
+  .card-hover-zoom:hover {
+    transform: scale(1.05) !important;
+    -ms-transform: scale(1.05) !important;
+    -moz-transform: scale(1.05) !important;
+    -webkit-transform: scale(1.05) !important;
+  }
+}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
