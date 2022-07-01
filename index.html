@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -122,10 +122,10 @@
                   <img class="img-fluid rounded" src="./static/img-1.jpg" alt="Primeira Imagem">
                 </div>
                 <div class="carousel-item">
-                  <img class="img-fluid rounded" src="./static/img-1.jpg" alt="Segunda Imagem">
+                  <img class="img-fluid rounded" src="./static/img-2.jpg" alt="Segunda Imagem">
                 </div>
                 <div class="carousel-item">
-                  <img class="img-fluid rounded" src="./static/img-1.jpg" alt="Terceira Imagem">
+                  <img class="img-fluid rounded" src="./static/img-3.jpg" alt="Terceira Imagem">
                 </div>
               </div>
             </div> 
@@ -170,217 +170,215 @@
         <div class="container">
           <h2>Cronograma</h2>
           <p><br></p>
-          <div data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
-            <nav> 
-                <div class="nav bg-white justify-content-center justify-content-md-start" id="nav-tab" role="tablist">
-                  <button class="nav-link btn mb-1 rounded text-primary me-1" id="segunda-tab" data-bs-toggle="tab" data-bs-target="#segunda" type="button" role="tab" aria-controls="segunda" aria-selected="true">Segunda</button>
-                  <button class="nav-link btn mb-1 rounded text-primary mx-1" id="terca-tab" data-bs-toggle="tab" data-bs-target="#terca" type="button" role="tab" aria-controls="terca" aria-selected="false">Terça</button>
-                  <button class="nav-link btn mb-1 rounded text-primary mx-1" id="quarta-tab" data-bs-toggle="tab" data-bs-target="#quarta" type="button" role="tab" aria-controls="quarta" aria-selected="false">Quarta</button>
-                  <button class="nav-link btn mb-1 rounded text-primary mx-1" id="quinta-tab" data-bs-toggle="tab" data-bs-target="#quinta" type="button" role="tab" aria-controls="quinta" aria-selected="false">Quinta</button>
-                  <button class="nav-link btn mb-1 rounded text-primary mx-1" id="sexta-tab" data-bs-toggle="tab" data-bs-target="#sexta" type="button" role="tab" aria-controls="sexta" aria-selected="false">Sexta</button>
-                </div>
-              </nav>
-              <div class="tab-content small" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="segunda" role="tabpanel" aria-labelledby="segunda-tab">
-                    <div class="row"> <!-- Grade horária segunda-feira -->   
-                      <div class="table-responsive">     
-                        <table class="table table-striped table-bordered">
-                          <thead>
-                            <tr>
-                              <th class="col-1">Horários</th>
-                              <th class="col-1">Tipo</th>
-                              <th class="col-4">Atividade</th>
-                              <th class="col-3">Ministrante</th>
-                              <th class="col-2">Local</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-center"><nobr>10:20 às 12:00</nobr></td>
-                              <td><nobr>Palestra</nobr></td>
-                              <td><nobr>A importância da teoria da informação</nobr></td>
-                              <td><nobr>John Doe</nobr></td>
-                              <td><nobr>LAB I</nobr></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center"><nobr>12:20 às 14:00</nobr></td>
-                                <td><nobr>Mini curso</nobr></td>
-                                <td><nobr>Introdução ao Python</nobr></td>
-                                <td><nobr>Jane Churchill</nobr></td>
-                                <td><nobr>LAB II</nobr></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center"><nobr>14:20 às 16:00</nobr></td>
-                                <td><nobr>Mini curso</nobr></td>
-                                <td><nobr>Introdução ao MongoDB</nobr></td>
-                                <td><nobr>Alice</nobr></td>
-                                <td><nobr>LAB IV</nobr></td>
-                              </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="terca" role="tabpanel" aria-labelledby="terca-tab">
-                  <div class="row">
-                    <div class="table-responsive"> <!-- Grade horária terça-feira -->        
-                        <table class="table table-striped table-bordered">
-                          <thead>
-                            <tr>
-                              <th class="col-1">Horários</th>
-                              <th class="col-1">Tipo</th>
-                              <th class="col-4">Atividade</th>
-                              <th class="col-3">Ministrante</th>
-                              <th class="col-2">Local</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-center"><nobr></nobr>10:50 às 12:30</td>
-                              <td><nobr>Curso</nobr></td>
-                              <td><nobr>Introdução ao Boostrap 5</nobr></td>
-                              <td><nobr>Ana</nobr></td>
-                              <td><nobr>LAB III</nobr></td>
+          <nav> 
+              <div class="nav bg-white justify-content-center justify-content-md-start" id="nav-tab" role="tablist">
+                <button class="nav-link btn mb-1 rounded text-primary me-1" id="segunda-tab" data-bs-toggle="tab" data-bs-target="#segunda" type="button" role="tab" aria-controls="segunda" aria-selected="true">Segunda</button>
+                <button class="nav-link btn mb-1 rounded text-primary mx-1" id="terca-tab" data-bs-toggle="tab" data-bs-target="#terca" type="button" role="tab" aria-controls="terca" aria-selected="false">Terça</button>
+                <button class="nav-link btn mb-1 rounded text-primary mx-1" id="quarta-tab" data-bs-toggle="tab" data-bs-target="#quarta" type="button" role="tab" aria-controls="quarta" aria-selected="false">Quarta</button>
+                <button class="nav-link btn mb-1 rounded text-primary mx-1" id="quinta-tab" data-bs-toggle="tab" data-bs-target="#quinta" type="button" role="tab" aria-controls="quinta" aria-selected="false">Quinta</button>
+                <button class="nav-link btn mb-1 rounded text-primary mx-1" id="sexta-tab" data-bs-toggle="tab" data-bs-target="#sexta" type="button" role="tab" aria-controls="sexta" aria-selected="false">Sexta</button>
+              </div>
+            </nav>
+            <div class="tab-content small" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="segunda" role="tabpanel" aria-labelledby="segunda-tab">
+                  <div class="row"> <!-- Grade horária segunda-feira -->   
+                    <div class="table-responsive">     
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-1">Tipo</th>
+                            <th class="col-4">Atividade</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-2">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>10:20 às 12:00</nobr></td>
+                            <td><nobr>Palestra</nobr></td>
+                            <td><nobr>A importância da teoria da informação</nobr></td>
+                            <td><nobr>John Doe</nobr></td>
+                            <td><nobr>LAB I</nobr></td>
+                          </tr>
+                          <tr>
+                              <td class="text-center"><nobr>12:20 às 14:00</nobr></td>
+                              <td><nobr>Mini curso</nobr></td>
+                              <td><nobr>Introdução ao Python</nobr></td>
+                              <td><nobr>Jane Churchill</nobr></td>
+                              <td><nobr>LAB II</nobr></td>
                             </tr>
                             <tr>
-                                <td class="text-center"><nobr>12:50 às 14:30</nobr></td>
-                                <td><nobr>Palestra</nobr></td>
-                                <td><nobr>Teoria da relatividade</nobr></td>
-                                <td><nobr>Karl Sagan</nobr></td>
-                                <td><nobr>Sala L001</nobr></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center"><nobr>14:50 às 16:30</nobr></td>
-                                <td><nobr>Mini curso</nobr></td>
-                                <td><nobr>Introdução ao MongoDB</nobr></td>
-                                <td><nobr>Alice</nobr></td>
-                                <td><nobr>LAB I</nobr>V</td>
-                              </tr>
-                          </tbody>
-                        </table>
+                              <td class="text-center"><nobr>14:20 às 16:00</nobr></td>
+                              <td><nobr>Mini curso</nobr></td>
+                              <td><nobr>Introdução ao MongoDB</nobr></td>
+                              <td><nobr>Alice</nobr></td>
+                              <td><nobr>LAB IV</nobr></td>
+                            </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
+              </div>
+              <div class="tab-pane fade" id="terca" role="tabpanel" aria-labelledby="terca-tab">
+                <div class="row">
+                  <div class="table-responsive"> <!-- Grade horária terça-feira -->        
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-1">Tipo</th>
+                            <th class="col-4">Atividade</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-2">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr></nobr>10:50 às 12:30</td>
+                            <td><nobr>Curso</nobr></td>
+                            <td><nobr>Introdução ao Boostrap 5</nobr></td>
+                            <td><nobr>Ana</nobr></td>
+                            <td><nobr>LAB III</nobr></td>
+                          </tr>
+                          <tr>
+                              <td class="text-center"><nobr>12:50 às 14:30</nobr></td>
+                              <td><nobr>Palestra</nobr></td>
+                              <td><nobr>Teoria da relatividade</nobr></td>
+                              <td><nobr>Karl Sagan</nobr></td>
+                              <td><nobr>Sala L001</nobr></td>
+                            </tr>
+                            <tr>
+                              <td class="text-center"><nobr>14:50 às 16:30</nobr></td>
+                              <td><nobr>Mini curso</nobr></td>
+                              <td><nobr>Introdução ao MongoDB</nobr></td>
+                              <td><nobr>Alice</nobr></td>
+                              <td><nobr>LAB I</nobr>V</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="quarta" role="tabpanel" aria-labelledby="quarta-tab">
-                    <div class="row"> <!-- Grade horária quarta-feira -->
-                      <div class="table-responsive">    
-                        <table class="table table-striped table-bordered">
-                          <thead>
-                            <tr>
-                              <th class="col-1">Horários</th>
-                              <th class="col-1">Tipo</th>
-                              <th class="col-4">Atividade</th>
-                              <th class="col-3">Ministrante</th>
-                              <th class="col-2">Local</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-center"><nobr>17:20 às 18:00</nobr></td>
-                              <td><nobr>Mini Curso</nobr></td>
-                              <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                              <td><nobr>Nichole Hooper</nobr></td>
-                              <td><nobr>L003</nobr></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center"><nobr>18:20 às 19:00</nobr></td>
-                                <td><nobr>Palestra</nobr></td>
-                                <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                                <td><nobr>Henley Beasley</nobr></td>
-                                <td><nobr>Auditório</nobr></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center"><nobr>19:20 às 20:00</nobr></td>
-                                <td><nobr>Workshop</nobr></td>
-                                <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                                <td><nobr>Jaskaran Whiteley</nobr></td>
-                                <td><nobr>Centro de Convivência</nobr></td>
-                              </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>  
-                </div>
-                <div class="tab-pane fade" id="quinta" role="tabpanel" aria-labelledby="quinta-tab">
-                    <div class="row"> <!-- Grade horária quinta-feira -->
-                      <div class="table-responsive">        
-                        <table class="table table-striped table-bordered">
-                          <thead>
-                            <tr>
-                              <th class="col-1">Horários</th>
-                              <th class="col-1">Tipo</th>
-                              <th class="col-4">Atividade</th>
-                              <th class="col-3">Ministrante</th>
-                              <th class="col-2">Local</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-center"><nobr>10:20 às 12:00</nobr></td>
+              </div>
+              <div class="tab-pane fade" id="quarta" role="tabpanel" aria-labelledby="quarta-tab">
+                  <div class="row"> <!-- Grade horária quarta-feira -->
+                    <div class="table-responsive">    
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-1">Tipo</th>
+                            <th class="col-4">Atividade</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-2">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>17:20 às 18:00</nobr></td>
+                            <td><nobr>Mini Curso</nobr></td>
+                            <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
+                            <td><nobr>Nichole Hooper</nobr></td>
+                            <td><nobr>L003</nobr></td>
+                          </tr>
+                          <tr>
+                              <td class="text-center"><nobr>18:20 às 19:00</nobr></td>
                               <td><nobr>Palestra</nobr></td>
                               <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                              <td><nobr>Divine Young</nobr></td>
-                              <td><nobr>Mini Auditório</nobr></td>
+                              <td><nobr>Henley Beasley</nobr></td>
+                              <td><nobr>Auditório</nobr></td>
                             </tr>
                             <tr>
-                                <td class="text-center"><nobr>12:20 às 14:00</nobr></td>
-                                <td><nobr>Hackathon</nobr></td>
-                                <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                                <td><nobr>Elisabeth Turnbull</nobr></td>
-                                <td><nobr>LAB INF 3</nobr></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center"><nobr>14:20 às 16:00</nobr></td>
-                                <td><nobr>Workshop</nobr></td>
-                                <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                                <td><nobr>Ayush Cohen</nobr></td>
-                                <td><nobr>Bloco K</nobr></td>
-                              </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>  
-                </div>
-                <div class="tab-pane fade" id="sexta" role="tabpanel" aria-labelledby="sexta-tab">
-                    <div class="row"><!-- Grade horária sexta-feira -->
-                      <div class="table-responsive">       
-                        <table class="table table-striped table-bordered">
-                          <thead>
-                            <tr>
-                              <th class="col-1">Horários</th>
-                              <th class="col-1">Tipo</th>
-                              <th class="col-4">Atividade</th>
-                              <th class="col-3">Ministrante</th>
-                              <th class="col-2">Local</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="text-center"><nobr>09:20 às 12:00</nobr></td>
-                              <td><nobr>Curso</nobr></td>
+                              <td class="text-center"><nobr>19:20 às 20:00</nobr></td>
+                              <td><nobr>Workshop</nobr></td>
                               <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                              <td><nobr>Hope Burke</nobr></td>
-                              <td><nobr>DERAC</nobr></td>
+                              <td><nobr>Jaskaran Whiteley</nobr></td>
+                              <td><nobr>Centro de Convivência</nobr></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>  
+              </div>
+              <div class="tab-pane fade" id="quinta" role="tabpanel" aria-labelledby="quinta-tab">
+                  <div class="row"> <!-- Grade horária quinta-feira -->
+                    <div class="table-responsive">        
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-1">Tipo</th>
+                            <th class="col-4">Atividade</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-2">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>10:20 às 12:00</nobr></td>
+                            <td><nobr>Palestra</nobr></td>
+                            <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
+                            <td><nobr>Divine Young</nobr></td>
+                            <td><nobr>Mini Auditório</nobr></td>
+                          </tr>
+                          <tr>
+                              <td class="text-center"><nobr>12:20 às 14:00</nobr></td>
+                              <td><nobr>Hackathon</nobr></td>
+                              <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
+                              <td><nobr>Elisabeth Turnbull</nobr></td>
+                              <td><nobr>LAB INF 3</nobr></td>
                             </tr>
                             <tr>
-                                <td class="text-center"><nobr>11:20 às 13:00</nobr></td>
-                                <td><nobr>Palestra</nobr></td>
-                                <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                                <td><nobr>Addison Smyth</nobr></td>
-                                <td><nobr>Centro de Convivência</nobr></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center"><nobr>13:20 às 15:00</nobr></td>
-                                <td><nobr>Coffee Break</nobr></td>
-                                <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
-                                <td><nobr>Sanah Eastwood</nobr></td>
-                                <td><nobr>Auditório</nobr></td>
-                              </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                              <td class="text-center"><nobr>14:20 às 16:00</nobr></td>
+                              <td><nobr>Workshop</nobr></td>
+                              <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
+                              <td><nobr>Ayush Cohen</nobr></td>
+                              <td><nobr>Bloco K</nobr></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>  
-                </div>
+              </div>
+              <div class="tab-pane fade" id="sexta" role="tabpanel" aria-labelledby="sexta-tab">
+                  <div class="row"><!-- Grade horária sexta-feira -->
+                    <div class="table-responsive">       
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-1">Tipo</th>
+                            <th class="col-4">Atividade</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-2">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>09:20 às 12:00</nobr></td>
+                            <td><nobr>Curso</nobr></td>
+                            <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
+                            <td><nobr>Hope Burke</nobr></td>
+                            <td><nobr>DERAC</nobr></td>
+                          </tr>
+                          <tr>
+                              <td class="text-center"><nobr>11:20 às 13:00</nobr></td>
+                              <td><nobr>Palestra</nobr></td>
+                              <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
+                              <td><nobr>Addison Smyth</nobr></td>
+                              <td><nobr>Centro de Convivência</nobr></td>
+                            </tr>
+                            <tr>
+                              <td class="text-center"><nobr>13:20 às 15:00</nobr></td>
+                              <td><nobr>Coffee Break</nobr></td>
+                              <td><nobr>Lorem ipsum dolor sit amet, consectetur adipiscing.</nobr></td>
+                              <td><nobr>Sanah Eastwood</nobr></td>
+                              <td><nobr>Auditório</nobr></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>  
               </div>
             </div>
           </div>
@@ -392,7 +390,7 @@
         <div class="container py-2 px-4">
           <!-- TODO: DEFINIR SE ESTA SEÇÃO VAI SE CHAMAR PALESTRANTES MESMO -->
           <h2 class="text-start pt-2 pb-4">Palestrantes</h2>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 py-2">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 py-2" data-aos="fade-in" data-aos-duration="1000">
             <div class="col py-2">
               <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
                 <div class="row no-gutters align-items-center">
@@ -683,7 +681,7 @@
                     <p><i class="bi bi-whatsapp mx-2"></i>(42) 00000-0000</p>
                   </li>
                   <li>
-                    <p><i class="bi bi-envelope mx-2"></i>email_sati@exemplo.com</p>
+                    <p class="text-nowrap"><i class="bi bi-envelope mx-2"></i>email_sati@exemplo.com</p>
                   </li>
                 </ul>
               </div>
