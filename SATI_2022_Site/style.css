@@ -1,0 +1,21 @@
+
+.background-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbipbrasil.com.br%2Fwp-content%2Fuploads%2F2020%2F04%2Fimagem-AutoML-scaled.jpg&f=1&nofb=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero {
+    height: 100vh;
+    padding: 0;
+}
+
+.contact-hover:hover > :first-child {
+    transition: background-color 300ms ease-in-out 100ms;
+    background-color: #ccc;
+}
