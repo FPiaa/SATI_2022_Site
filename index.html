@@ -681,12 +681,19 @@
 
             <!-- direito -->
             <div class="col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-              <form id="formContato" action="#" class="py-2 py-md-0 needs-validation" novalidate>
+              <form id="formContato" action="https://submit-form.com/IHSMtUNh" method="post" class="py-2 py-md-0 needs-validation" novalidate>
                 <h3 class="text-center mb-4">Deixe uma sugestão</h3>
                 <div class="form-floating mb-3">
                   <input
+                    type="hidden"
+                    name="_redirect"
+                    value="https://sati2022.herokuapp.com/?form=true"
+                    append="false"
+                  />
+                  <input type="hidden" name="_append" value="false" />
+                  <input
                     type="text"
-                    class="form-control" id="nome" placeholder="e.g. João da Silva" required aria-required="true">
+                    class="form-control" id="nome" name="nome" placeholder="e.g. João da Silva" required aria-required="true">
                   <label for="nome">Nome completo</label>
                   <div class="invalid-feedback">
                     <span>Por favor insira o seu nome</span>
@@ -696,12 +703,12 @@
                 <div class="form-floating mb-3">
                   <input
                     type="email"
-                    class="form-control has-validation" id="email" placeholder="nome@exemplo.com" required aria-required="true">
+                    class="form-control has-validation" id="email" name="email" placeholder="nome@exemplo.com" required aria-required="true">
                   <label for="email">E-mail</label>
                   <div class="invalid-feedback">Insira um e-mail válido</div>
                 </div>
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="textAreaForm" style="height: 100px" required aria-required="true"></textarea>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="textAreaForm" name="descricao" style="height: 100px" required aria-required="true"></textarea>
                   <label for="textAreaForm">Sugestões</label>
                   <div class="invalid-feedback">Por favor deixa uma mensagem para nós</div>
                 </div>
@@ -798,6 +805,20 @@
         }
 
         return canSubmit;
+      }
+
+      function styleFormButton() {
+        let btn = document.getElementById("btnFormContato");
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get("email");
+        if (query != null && query=="true") {
+          btn.classList.remove(["btn-primary", "btn-invert-color"]);
+          btn.classList.add("btn-success");
+        } else if(query!="true") {
+          btn.classList.add(["btn-primary", "btn-invert-color"]);
+          btn.classList.remove("btn-success");
+        }
+
       }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
