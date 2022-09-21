@@ -65,13 +65,15 @@
       <div class="container-lg d-none d-lg-block">
         <div class="d-flex align-items-center justify-content-between">
           <a class="px-4 text-decoration-none" href="#">
-            <img class="img-fluid w-25 h-25" src="./static/logobranco.png" alt="Logo da SATI">
+            <img class="img-fluid w-50 d-lg-block d-xl-none" src="./static/logobranco_menor.png" alt="Logo da SATI">
+            <img class="img-fluid w-25 d-none d-xl-block" src="./static/logobranco_menor.png" alt="Logo da SATI">
           </a>
           <nav class="nav col-12 px-4 col-lg-auto justify-content-center">
             <a class="nav-link rounded text-decoration-none text-secondary" href="#sobre"> Sobre</a>
             <a class="nav-link rounded text-decoration-none text-secondary" href="#atividades">Atividades</a>
             <a class="nav-link rounded text-decoration-none text-secondary" href="#cronograma">Cronograma</a>
             <a class="nav-link rounded text-decoration-none text-secondary" href="#palestrantes">Palestrantes</a>
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#inscricao">Inscreva-se</a>
             <a class="nav-link rounded text-decoration-none text-secondary" href="#contatos">Contatos</a>
           </nav>
         </div>
@@ -81,7 +83,7 @@
     <!-- HEADER MOBILE -->
       <div class="container d-lg-none d-flex justify-content-between align-items-center">
           <a class="px-4 text-decoration-none w-25" href="#">
-            <img class="img-fluid" src="./static/logobranco.png" alt="logo sati">
+            <img class="img-fluid " src="./static/logobranco_menor.png" alt="logo sati">
           </a>
           <a class="nav-link btn-outline-secondary rounded text-decoration-none text-white border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#headerOffCanvas" aria-controls="Cabeçalho móvel"
@@ -97,6 +99,7 @@
               <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#atividades">Atividades</a>
               <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#cronograma">Cronograma</a>
               <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#palestrantes">Palestrantes</a>
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#inscricao">Inscreva-se</a>
               <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#contatos">Contatos</a>
             </nav>
           </div>
@@ -133,10 +136,9 @@
             <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1000">
               <h2 class="text-start text-md-center pb-4 pt-3 pt-md-0" >O que é a SATI?</h2>
               <p class="text-start text-md-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing 
-                elit. Illum repudiandae aut iste harum culpa pariatur, blanditiis 
-                est quam voluptatibus ullam sequi, saepe mollitia quas autem. Eos
-                provident omnis assumenda blanditiis?
+                A Semana de Atualização em Tecnologia da Informação é uma forma de aproximar os alunos dos profissionais
+                da área. O evento conta com uma séria de palestras, cursos e outras atividades para trazer novidades
+                relacionadas as diversas áreas de atuação dos cursos de informática.
               </p>
             </div>
           </div>  
@@ -151,15 +153,19 @@
           <div class="row d-flex justify-content-center pb-4">
             <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 pe-lg-4" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
               <h3 class="text-start">Palestras</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
+              <p>Teremos diferentes palestras para discutir sobre inovação, segurança no mundo virtual, saúde mental, capital de risco, sobre o perfil do profissional de T.I. e Domain Driven Design.</p>
             </div>
             <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-sm-4" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">
               <h3 class="text-start">Cursos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
+              <p>Haverá minicursos sobre Git e Github, e Latex além de vários tipos de Workshops como ReactJS, Power BI, DevOps e Games.</p>
             </div>
             <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="1900" data-aos-duration="1000">
-              <h3 class="text-start">Alguma outra atividade</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde dolor hic modi? Velit cum quidem pariatur, deserunt labore voluptates, molestias ducimus laboriosam omnis dolorem voluptatibus, eius obcaecati non nostrum.</p>
+              <h3 class="text-start">Visitas técnicas</h3>
+              <p>Serão visitadas as empresas KMM, que está descarbonizando a logística brasileira, e Trizy, responsável por uma plataforma de agendamento para cargas e descargas de caminhões.</p>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="2600" data-aos-duration="1000">
+              <h3 class="text-start">Desafios de Programação</h3>
+              <p>Para finalizar com grande estilo teremos um Hackaton e uma maratona de programação.</p>
             </div>
           </div>
         </div>
@@ -271,7 +277,7 @@
                             <td class="text-center"><nobr>8h &#8212 12h</nobr></td>
                             <td><nobr>Visita Técnica Trizy</nobr></td>
                             <td><nobr>Trizy</nobr></td>
-                            <td><nobr>????????</nobr></td>
+                            <td><nobr><a class="btn-invert-color py-2 pe-2 rounded text-decoration-none" target="_blank" href="https://g.page/trizy?share"><i class="bi bi-geo-alt mx-2"></i>Empresa Trizy</a></nobr></td>
                           </tr>
                           <tr>
                             <td class="text-center"><nobr>13h &#8212 15h</nobr></td>
@@ -315,12 +321,6 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td class="text-center"><nobr>10h &#8212 11h</nobr></td>
-                            <td><nobr>Palestra "Governança ambiental, social e corporativa"</nobr></td>
-                            <td><nobr>????????</nobr></td>
-                            <td><nobr>Auditório L</nobr></td>
-                          </tr>
                           <tr>
                             <td class="text-center"><nobr>11h &#8212 12h</nobr></td>
                             <td><nobr>Palestra "Venture Capital"</nobr></td>
@@ -390,8 +390,8 @@
                           <tr>
                             <td class="text-center"><nobr>8h &#8212 12h</nobr></td>
                             <td><nobr>Visita Técnica</nobr></td>
-                            <td><nobr>????????</nobr></td>
-                            <td><nobr>????????</nobr></td>
+                            <td><nobr>KMM</nobr></td>
+                            <td><nobr><a class="btn-invert-color py-2 pe-2 rounded text-decoration-none"href="https://goo.gl/maps/16f2ZXK2rcBno2Wd6" target="_blank"><i class="bi bi-geo-alt mx-2"></i>Empresa KMM</a></nobr></td>
                           </tr>
                           <tr>
                             <td class="text-center"><nobr>13h &#8212 15h</nobr></td>
@@ -444,14 +444,14 @@
                           <tr>
                             <td class="text-center"><nobr>8h &#8212 21h</nobr></td>
                             <td><nobr>Hackaton</nobr></td>
-                            <td><nobr>????????</nobr></td>
-                            <td><nobr>????????</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
                           </tr>
                           <tr>
                             <td class="text-center"><nobr>13h &#8212 18h</nobr></td>
                             <td><nobr>Maratona</nobr></td>
-                            <td><nobr>????????</nobr></td>
-                            <td><nobr>????????</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
                           </tr>
                         </tbody>
                       </table>
@@ -618,7 +618,7 @@
               <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
                 <div class="row no-gutters align-items-center">
                   <div class="col-4 col-md-12">
-                    <img class="img-fluid rounded-circle" src="./static/palestrantes/andre_garcia.jpg" alt="PLACEHOLDER">
+                    <img class="img-fluid w-75 rounded-circle" src="./static/palestrantes/bruno_leria.jpg" alt="PLACEHOLDER">
                   </div>
                   <div class="col-8 col-md-12">
                     <div class="card-body">
@@ -650,7 +650,7 @@
               <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
                 <div class="row no-gutters align-items-center">
                   <div class="col-4 col-md-12">
-                    <img class="img-fluid rounded-circle" src="./static/palestrantes/andre_garcia.jpg" alt="PLACEHOLDER">
+                    <img class="img-fluid w-75 rounded-circle" src="./static/palestrantes/fernando_barreto.png" alt="PLACEHOLDER">
                   </div>
                   <div class="col-8 col-md-12">
                     <div class="card-body">
@@ -723,19 +723,18 @@
           <div class="d-flex flex-column h-100 justify-content-center align-items-center text-secondary pb-4">
             <h2 class="text-center pb-2">Ficou interessado?</h2>
             <p class="lead py-2">Faça a sua inscrição agora mesmo, basta clicar no botão abaixo</p>
-            <a href="#" class="btn btn-invert-color border-secondary rounded text-decoration-none mt-2 text-secondary rounded-pill border-2">Inscreva-se</a>
-            <p class="small pt-2">Valor da inscrição 00,00R$</p>
-            <p class="small pb-2">Inscrição pelo serviço <i>Event3</i></p>
+            <p class="my-2">O valor de inscrição é um produto de limpeza que será doado.</p>
+            <a href="#" class="btn btn-invert-color p-3 border-secondary rounded text-decoration-none my-2 text-secondary rounded-pill border-2">Inscreva-se</a>
+            <p class="small my-2">Inscrição pelo serviço <i>Event3</i></p>
             <span class="py-4"></span>
           </div>
         </div>
       </section>
 
       <!-- INICIO CONTATO    -->
-      <section id="contatos" data-aos="fade-in" data-aos-duration="1000">
+      <section id="contatos" class="pt-section" data-aos="fade-in" data-aos-duration="1000">
         <div class="container py-2 px-4">
-          <h2 class="text-start pt-2 pb-4">Contatos</h2>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus quam alias repudiandae commodi recusandae totam vero dolore dignissimos, tempore illum sit aut porro illo magni voluptatibus architecto aspernatur atque.</p>
+          <h2 class="text-start pt-2 pb-2">Contatos</h2>
           <div class="row row-cols-1 row-cols-md-2 py-2 py-md-4">
             <!-- esquerdo -->
             <div class="col d-flex justify-content-center justify-content-md-start" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
@@ -833,12 +832,6 @@
           <a href="#" class="btn btn-invert-color rounded d-inline-flex px-2 text-secondary">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="#" class="btn btn-invert-color rounded d-inline-flex px-2 text-secondary">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="#" class="btn btn-invert-color rounded d-inline-flex px-2 text-secondary">
-            <i class="bi bi-twitter"></i>
-          </a>
         </div>
       </section>
 
@@ -846,7 +839,7 @@
         <div class="row d-flex justify-content-around">
             <div class="col-10 col-sm-6 col-md-4 py-4 py-md-0">
               <h5 class="mb-3">SATI</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi cum unde vel</p>
+              <p>Um evento feito com carinho &#10084;</p>
             </div>
 
             <div class="col-10 col-sm-6 col-md-4 py-4 py-md-0 ">
