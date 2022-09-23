@@ -21,19 +21,26 @@
     .titulo{
       font-family: 'Staatliches', cursive;
     }
-    p {
+    p, h1,h2,h3,h4,h5,h6, .cronograma {
       font-family: 'Arimo', sans-serif;   
-    }
-    .cronograma{
-      font-family: 'Arimo', sans-serif;   
-    }
-    .patrocinadores{
-      margin: auto;
     }
     .hero-logo-size {
-      height: 35% !important;
-      width: 35% !important;
+      height: 40% !important;
+      width: 40% !important;
     }
+    @media screen and (max-width: 768px) {
+      .hero-logo-size {
+        height: 75% !important;
+        width: 75% !important;
+      } 
+    }
+    @media screen and (min-width: 768.02px) and (max-width: 992px) {
+      .hero-logo-size {
+        height: 50% !important;
+        width: 50% !important;
+      } 
+    }
+    
     .pt-section {
       padding-top: 72px;
     }
@@ -45,16 +52,12 @@
       <div class="background-img"></div>
         <div class="container-fluid d-flex h-100 align-items-center justify-content-center opacity-100" data-aos="zoom-in-up" data-aos-duration="2000">
           <div class="flex-column text-center">
-            <div class="d-sm-block d-none">
-              <img src="./static/logobranco.png" class="hero-logo-size alt="Logo da SATI">
-              <h3 class="mb-5 text-secondary word-break titulo h5">Venha se atualizar <span class="text-white">conosco.</span></h3>
-              <a href="#sobre" class="btn btn-invert-color border-secondary rounded text-decoration-none mt-2 text-secondary rounded-pill border-2"> <i class="bi bi-card-text me-2"></i>Saiba mais</a>
-            </div>
-            <div class="d-sm-none">
-              <img src="./static/logobranco.png" class="hero-logo-size" alt="computador">
-              <h3 class="mb-5 text-secondary word-break titulo h6">Venha se atualizar <span class="text-white">conosco.</span></h3>
-              <a href="#sobre" class="btn btn-invert-color border-secondary rounded text-decoration-none mt-2 text-secondary rounded-pill border-2"> <i class="bi bi-card-text me-2"></i>Saiba mais</a>
-            </div>
+            <img src="./static/logobranco.png" class="hero-logo-size alt="Logo da SATI">
+            <h3 class="text-secondary word-break titulo d-none d-sm-block h5">Venha se atualizar <span class="text-white">conosco.</span></h3>
+            <h3 class="text-secondary word-break titulo d-sm-none h6">Venha se atualizar <span class="text-white">conosco.</span></h3>
+            <h3 class="mb-5 text-white titulo h5 d-none d-sm-block h5">24 a 28 de Outubro</h3>
+            <h3 class="mb-5 text-white titulo h6 d-sm-none h6">24 a 28 de Outubro</h3>
+            <a href="#sobre" class="btn btn-invert-color border-secondary rounded text-decoration-none mt-2 text-secondary rounded-pill border-2"> <i class="bi bi-card-text me-2"></i>Saiba mais</a>
           </div>
       </header>
 
@@ -158,15 +161,15 @@
               <h3 class="text-start">Palestras</h3>
               <p>Teremos diferentes palestras para discutir sobre inovação, segurança no mundo virtual, saúde mental, capital de risco, sobre o perfil do profissional de T.I. e Domain Driven Design.</p>
             </div>
-            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-sm-4" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1000">
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-sm-4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
               <h3 class="text-start">Cursos</h3>
               <p>Haverá minicursos sobre Git e Github, e Latex além de vários tipos de Workshops como ReactJS, Power BI, DevOps e Games.</p>
             </div>
-            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="1900" data-aos-duration="1000">
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
               <h3 class="text-start">Visitas técnicas</h3>
-              <p>Serão visitadas as empresas KMM, que está descarbonizando a logística brasileira, e Trizy, responsável por uma plataforma de agendamento para cargas e descargas de caminhões.</p>
+              <p>Será visitada a Trizy, responsável por uma plataforma de agendamento para cargas e descargas de caminhões em dois momentos diferentes.</p>
             </div>
-            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="2600" data-aos-duration="1000">
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
               <h3 class="text-start">Desafios de Programação</h3>
               <p>Para finalizar com grande estilo teremos um Hackaton e uma maratona de programação.</p>
             </div>
@@ -368,7 +371,7 @@
                           </tr>
                           <tr>
                             <td class="text-center"><nobr>20h &#8212 21h</nobr></td>
-                            <td><nobr>Palestra "Saúde Mclass="text-center"></td>
+                            <td><nobr>Palestra "Saúde Mental" </nobr></td>
                           </tr>
                         </tbody>
                       </table>
@@ -391,8 +394,8 @@
                           <tr>
                             <td class="text-center"><nobr>8h &#8212 12h</nobr></td>
                             <td><nobr>Visita Técnica</nobr></td>
-                            <td><nobr>KMM</nobr></td>
-                            <td><nobr><a class="btn-invert-color py-2 pe-2 rounded text-decoration-none"href="https://goo.gl/maps/16f2ZXK2rcBno2Wd6" target="_blank"><i class="bi bi-geo-alt mx-2"></i>Empresa KMM</a></nobr></td>
+                            <td><nobr>Trizy</nobr></td>
+                            <td><nobr><a class="btn-invert-color py-2 pe-2 rounded text-decoration-none"href="https://g.page/trizy?share" target="_blank"><i class="bi bi-geo-alt mx-2"></i>Empresa Trizy</a></nobr></td>
                           </tr>
                           <tr>
                             <td class="text-center"><nobr>13h &#8212 15h</nobr></td>
@@ -507,7 +510,7 @@
               <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
                 <div class="row no-gutters align-items-center">
                   <div class="col-4 col-md-12">
-                    <img class="img-fluid rounded-circle" src="./static/palestrantes/andre_garcia.jpg" alt="PLACEHOLDER">
+                    <img class="img-fluid rounded-circle" src="https://dummyimage.com/200X200/#E1EAF/b7bae8.jpg" alt="PLACEHOLDER">
                   </div>
                   <div class="col-8 col-md-12">
                     <div class="card-body">
@@ -683,7 +686,7 @@
               <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
                 <div class="row no-gutters align-items-center">
                   <div class="col-4 col-md-12">
-                    <img class="img-fluid rounded-circle" src="./static/palestrantes/andre_garcia.jpg" alt="PLACEHOLDER">
+                    <img class="img-fluid rounded-circle" src="https://dummyimage.com/200X200/#E1EAF/b7bae8.jpg" alt="PLACEHOLDER">
                   </div>
                   <div class="col-8 col-md-12">
                     <div class="card-body">
@@ -717,52 +720,46 @@
       <!-- FIM PALESTRANTES -->
 
       <!-- INICIO PATROCINADORES -->
-      <section id="patrocinadores">
+      <section id="apoiadores" class="my-4">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 wow fadeInLeft" data-wow-duration="500ms">
-              <div class="sec-title text-center">
-                <h2>Patrocinadores</h2>
-                <div class="devider"><i class="fa fa-globe fa-lg"></i></div>
-              </div>
-              <div class="row">
-                <div class="col-md-1 patrocinadores">
-                  <img src="static/patrocinadores/kmm_marca-1-principal_x60.png" alt="Patrocinadores">
-                </div>
-                <div class="col-md-1 patrocinadores">
-                  <img src="static/patrocinadores/tigre-logo-2_3_x60.png" alt="Patrocinadores">
-                </div>
-                <div class="col-md-1 patrocinadores">
-                  <img src="static/patrocinadores/trizy_x60.jpg" alt="Patrocinadores">
-                </div>
-                <div class="col-md-1 patrocinadores">
-                  <img src="static/patrocinadores/plss_1_x60.png" alt="Patrocinadores">
-                </div>
-                <div class="col-md-1 patrocinadores">
-                  <img src="static/patrocinadores/inbix_x60.jpeg" alt="Patrocinadores">
-                </div>
-                <div class="col-md-1 patrocinadores">
-                  <img src="static/patrocinadores/MMTech_x60.png" alt="Patrocinadores">
-                </div>
-                <div class="col-md-1 patrocinadores">
-                  <img src="static/patrocinadores/logo-DAINF-7_1_x60.png" alt="Patrocinadores">
-                </div>
-              </div>
-            </div>	
+          <h2 class="text-center my-2">Apoiadores</h2>
+          <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="col-3 col-lg-2 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/kmm_marca-1-principal_x60.png" alt="Logo KMM" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-1 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/trizy_x60.jpg" alt="Logo Trizy" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-1 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/plss_1_x60.png" alt="Logo PLSS" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-1 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/inbix_x60.jpeg" alt="Logo Inbix" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-2 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/MMTech_x60.png" alt="Logo MMTech" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-2 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/tigre-logo-2_3_x60.png" alt="Logo Tigre" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-4 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/logo-DAINF-7_1_x60.png" alt="Logo DAINF" loading="lazy">
+            </div>
           </div>					
         </div>
       </section>
       <!-- FIM PATROCINADORES -->
 
-      <section id="inscricao" class="bg-primary pt-section" data-aos="fade-in" data-aos-duration="1000">
+      <section id="inscricao" class="bg-primary" data-aos="fade-in" data-aos-duration="1000" style="padding-top: 56px;">
         <div class="container py-2 px-4">
-          <div class="d-flex flex-column h-100 justify-content-center align-items-center text-secondary pb-4">
-            <h2 class="text-center pb-2">Ficou interessado?</h2>
-            <p class="lead py-2">Faça a sua inscrição agora mesmo, basta clicar no botão abaixo</p>
-            <p class="my-2 text-center">O valor de inscrição é um <bold>PRODUTO DE LIMPEZA</bold> que será doado à Escola de Educação Básica Dra. Zilda Arns na Modalidade de Educação Especial, cedido pela mesma, a Associação Artesanal do Excepcional de Ponta Grossa (ASSARTE).</p>
-            <a href="#" class="btn btn-invert-color p-3 border-secondary rounded text-decoration-none my-2 text-secondary rounded-pill border-2">Inscreva-se</a>
-            <p class="small my-2">Inscrição pelo serviço <i>Event3</i></p>
-            <span class="py-4"></span>
+          <div class="d-flex flex-column justify-content-center align-items-center text-secondary pb-4">
+            <h2 class="text-center h3 mt-2 mb-4">Ficou interessado?</h2>
+            <a href="https://www.even3.com.br/sati-2022/" target="_blank" class="btn btn-invert-color p-3 border-secondary rounded text-decoration-none mb-2 text-secondary rounded-pill border-2">Inscreva-se</a>
+            <span class="my-1 text-center"><i class="bi bi-coin"></i> <b>Valor da inscrição:</b> Doação de uma produto de limpeza</span>
+            <span class="my-1 text-center"><i class="bi bi-geo-alt"></i> <b>Local de entrega:</b> Sala C204 (Sala de atendimento ao aluno)</span>
+            <span class="my-1 text-center"><i class="bi bi-calendar3-week"></i> <b>Prazo para a entrega:</b> 03/10 &mdash; 06/10</span>
+            <span class="my-1 text-center"><i class="bi bi-clock"></i> <b>Horário de recebimento:</b> 14h às 17h | 19h às 21h</span>
+            <span class="text-center my-3 small pb-2">O produto de limpeza será doado à <b>Escola de Educação Básica Dra. Zilda Arns na Modalidade de Educação Especial</b>, cedido pela <b>Associação Artesanal do Excepcional de Ponta Grossa (ASSARTE)</b>.</span>
           </div>
         </div>
       </section>
@@ -881,7 +878,7 @@
             <div class="col-10 col-sm-6 col-md-4 py-4 py-md-0 ">
               <h5 class="mb-2">Links Úteis</h5>
               <nav>
-                <a href="#" class="btn btn-invert-color rounded text-decoration-underline text-secondary">Inscreva-se</a>
+                <a href="inscricao" class="btn btn-invert-color rounded text-decoration-underline text-secondary">Inscreva-se</a>
               </nav>
             </div>
 
