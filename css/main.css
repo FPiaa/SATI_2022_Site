@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  opacity: 80%;
+  opacity: 90%;
 }
 
 .hero {
@@ -17,7 +17,7 @@
   z-index: 1;
   height: 100vh;
   padding: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.89), #320F59);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.70), #320F59);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
